@@ -1,77 +1,103 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import HorizontalSquare from "../components/HorizontalSquare.astro";
 import { getCollection } from "astro:content";
+import Card from "../components/Card.astro";
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
 
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout>
 
     <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-      <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+      <div class="text-xl py-1">Hi there! 👋</div>
+      <div class="text-5xl font-bold">My name is Han Wei Tat</div>
+      <div class="text-3xl py-3 font-bold">An Information Systems Undergraduate at the National University of Singapore</div>
       <div class="py-2">
         <text class="text-lg">
-          I made this template for everyone who needs to create a personal website easily and quickly. This template includes Project Section, CV Section, Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Design and 29 Visual themes. I hope you find it useful!
+          Welcome to my website! I am passionate about helping businesses thrive by developing software solutions and I'm looking for internship opportunities too! Do feel free to reach out to me if you have any opportunities available.
           </text
         >
       </div>
       <div class="mt-8">
-        <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-        <a href="https://github.com/manuelernestog/astro-modern-personal-website" target="_blank" class="btn btn-outline ml-5"> Get This template</a>
+        <a class="btn" href="https://www.linkedin.com/in/hanweitat/" target="_blank"> Let's connect!</a>
+        <a href="mailto:hanweitat@u.nus.edu" target="_blank" class="btn btn-outline ml-5"> Contact me!</a>
       </div>
     </div>
 
     <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+      <div class="text-3xl w-full font-bold mb-2">Some of my projects {"</>"}</div>
     </div>
 
     <HorizontalCard
-      title="Demo Project 1"
-      img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
+      title="FriendGPT"
+      img="telegram.jpg"
+      desc="In this small project of mine, I used OpenAI's APIs to create a Telegram chatbot that allows users to ask all kinds of questions conveniently and it provides an avenue for users to socialise with the robot too."
+      url="https://t.me/bffgptbot"
       badge="NEW"
     />
     <div class="divider my-0"></div>
     <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Stay Tuned"
+    img="loading.jpeg"
+    desc="Keep a lookout for this page! A new project is brewing!"
+    badge="IN PROGRESS"
   />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
 
     <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">My technical skills</div>
     </div>
 
-    {
-      last_posts.map((post) => (
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0"></div>
-      ))
-    }
+    <HorizontalCard
+    img="technicalskills.jpg"
+    />
+    <HorizontalCard
+    img="technicalskills2.jpeg"
+    />
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">My soft skills</div>
+    </div>
+
+    <div>
+      <div class="text-2xl font-bold mx-auto" style="width: 190px;">Communication</div>
+    </div>
+
+    <HorizontalSquare
+    img="softskills.jpeg"
+    />
+
+    <div>
+      <div class="text-2xl font-bold mx-auto" style="width: 140px;">Teamwork</div>
+    </div>
+
+    <HorizontalSquare
+    img="softskills2.jpeg"
+    />
+
+    <div>
+      <div class="text-2xl font-bold mx-auto" style="width: 230px;">Time Management</div>
+    </div>
+
+    <HorizontalSquare
+    img="softskills3.jpeg"
+    />
+
+    <div>
+      <div class="text-2xl font-bold mx-auto" style="width: 185px;">Problem Solving</div>
+    </div>
+
+    <HorizontalSquare
+    img="softskills4.jpeg"
+    />
+
+    <div>
+      <div class="text-2xl font-bold mx-auto" style="width: 185px;">Analytical Skills</div>
+    </div>
+
+    <HorizontalSquare
+    img="softskills5.jpeg"
+    />
 
 </BaseLayout>
