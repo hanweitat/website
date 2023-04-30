@@ -1,6 +1,6 @@
-# Astro Modern Personal Website
+# Han Wei Tat's Personal Website
 
-![Astro Modern Personal Website](public/social_img.png)
+![Astro Modern Personal Website](public/social_img.jpeg)
 
 Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
 
