@@ -4,7 +4,7 @@
 
 Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
 
-Website logo was made with Canva and the logos used are found on flaticon / Google. The website template was obtained from Astro and you can check them out [here](https://astro.build/)
+The website logo was made with Canva and the logos used are found on flaticon / Google. The website template was obtained from Astro and you can check them out [here](https://astro.build/)
 
 ## Demo
 
