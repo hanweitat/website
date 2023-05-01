@@ -1,8 +1,10 @@
 # Han Wei Tat's Personal Website
 
-![Astro Modern Personal Website](public/social_img.jpeg)
+![Han Wei Tat's Website](public/social_img.jpeg)
 
 Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
+
+Website logo was made with Canva and the logos used are found on flaticon / Google. The website template was obtained from Astro and you can check them out [here](https://astro.build/)
 
 ## Demo
 
